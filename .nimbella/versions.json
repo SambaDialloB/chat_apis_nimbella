@@ -1,0 +1,19 @@
+[
+  {
+    "apihost": "https://apigcp.nimbella.io",
+    "namespace": "sambendi-ia4hja5xvpx",
+    "packageVersions": {
+      "chatroom": {
+        "version": "0.0.14",
+        "digest": "ff3c44ad7f986f0e448f30b0d7982836318724642e60c35fffa05b46579c89b6"
+      }
+    },
+    "actionVersions": {
+      "chatroom/newUserId": {
+        "version": "0.0.4",
+        "digest": "0d0d9ae7cbd9aad96b2a2e71aea94807cf1e92463fa977bfcbd82bd92aba0fff"
+      }
+    },
+    "webHashes": {}
+  }
+]
