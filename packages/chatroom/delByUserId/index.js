@@ -1,16 +1,16 @@
 const nim = require('nim');
 const validation = require('./validation');
 
-const handleAddUser = (username) => {
+const handleDel = (username) => {
   const userListKey = 'chat_demo_user_list/';
   const redis = nim.redis()
   return redis.sismemberAsync(userListKey, username).then(userExists => {
     if(userExists) {
-      return { "returnCode": -1, "message": 'username has benn taken' };
+      return redis.sremAsync(userListKey, username).then(() => {
+        return { "returnCode": 0, "username": username };
+      })
     }
-    return redis.saddAsync('chat_demo_user_list/', username).then(() => {
-      return { "returnCode": 0, "username added": username };
-    })
+    return { "returnCode": -1, "message": "username is not existed" };
   })
 };
 
@@ -26,10 +26,10 @@ const handleValidate = async (username) => {
 
 const main = (params) => {
   const username = params.username;
-
+ 
   return handleValidate(username).then(res => {
     if(res.returnCode === 0) {
-      return handleAddUser(username).then(result => {
+      return handleDel(username).then(result => {
         return result
       });
     } else {
@@ -37,6 +37,5 @@ const main = (params) => {
     }
   });
 };
-
 
 exports.main = main;

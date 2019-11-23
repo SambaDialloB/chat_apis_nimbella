@@ -4,14 +4,34 @@
     "namespace": "sambendi-ia4hja5xvpx",
     "packageVersions": {
       "chatroom": {
-        "version": "0.0.14",
-        "digest": "ff3c44ad7f986f0e448f30b0d7982836318724642e60c35fffa05b46579c89b6"
+        "version": "0.0.37",
+        "digest": "4ab38996f72016a7c87583f9ee0a740ccb4b4bc59b17545298d160ce0492a542"
       }
     },
     "actionVersions": {
+      "chatroom/delByUserId": {
+        "version": "0.0.22",
+        "digest": "1343c4f835a7da910ef1e7685d08cbaa4f523f62c75c677af5b7aea747dd64f7"
+      },
+      "chatroom/delMessage": {
+        "version": "0.0.12",
+        "digest": "841a3936dff71f656ae2d6e36e97fab086aa1e626fd4b0f792dc4cd6c53c62c5"
+      },
+      "chatroom/getMessages": {
+        "version": "0.0.20",
+        "digest": "1758305932f648d371216cff03836868e9215e53d109f5025fd5eb60fcd0adeb"
+      },
+      "chatroom/getUserList": {
+        "version": "0.0.23",
+        "digest": "e454daef139f095a485bb8cfc4b13c408e6b68fc3e816d1bcdd0e3474aeb8134"
+      },
       "chatroom/newUserId": {
-        "version": "0.0.4",
-        "digest": "0d0d9ae7cbd9aad96b2a2e71aea94807cf1e92463fa977bfcbd82bd92aba0fff"
+        "version": "0.0.27",
+        "digest": "d07697bd5de436d875a26ccd9928b1e2a9b9261ed53351ba278931b0e558b09b"
+      },
+      "chatroom/postMessage": {
+        "version": "0.0.21",
+        "digest": "024377f87c980a539825cfaedfb6e99f1b0cc5357bfc8702fd617e2becd8f2fa"
       }
     },
     "webHashes": {}
