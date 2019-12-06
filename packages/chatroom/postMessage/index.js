@@ -2,7 +2,7 @@ const nim = require('nim');
 const validation = require('./validation');
 
 const handleAddMessage = (username, message, timestamp) => {
-  const messagePoolKey = 'chat_demo_message_pool';
+  const messagePoolKey = 'chat_demo_message_pool/';
   const userListKey = 'chat_demo_user_list/';
   const redis = nim.redis()
 

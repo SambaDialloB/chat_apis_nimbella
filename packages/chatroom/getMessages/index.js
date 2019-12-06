@@ -1,7 +1,7 @@
 const nim = require('nim');
 
 const main = (params) => {
-  const messagePoolKey = 'chat_demo_message_pool';
+  const messagePoolKey = 'chat_demo_message_pool/';
   const redis = nim.redis()
 
   return redis.llenAsync(messagePoolKey).then(total => {
